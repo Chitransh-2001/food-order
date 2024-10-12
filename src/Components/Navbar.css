@@ -1,0 +1,26 @@
+.navbar{
+    background-color: rgb(2, 71, 128);
+    
+}
+.btn{
+    font-weight: bold;
+    color: black;
+}
+.btn:hover{
+    font-weight:bold;
+    color: rgb(2, 71, 128);
+}
+.nav-link{
+    color: black ;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: white;
+    font-size: 22px;
+}
+
+.navbar-brand{
+    background: linear-gradient(to right,#ff156f,#dd5800,#d303d3,#f8e004)!important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+}

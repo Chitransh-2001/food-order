@@ -1,0 +1,53 @@
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.card{
+    animation: appear  linear;
+    animation-timeline:view() ;
+    animation-range: entry 0;
+}
+button{
+    position: relative;
+    border: none;
+    transition: .4s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    
+
+}
+button::before,button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    overflow: hidden;
+  
+}
+.cart::after{
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+  
+    height: 100%;
+    left:-35%;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+}
+.cart:hover:after{
+    height: 100%;
+    width:135%;
+    background-color: rgb(2, 71, 128);
+   
+    overflow: hidden;
+}
+.cart:hover{
+    color: black;
+    
+}
